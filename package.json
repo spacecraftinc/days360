@@ -1,0 +1,40 @@
+{
+  "name": "days360",
+  "version": "1.0.0",
+  "description": "Calculate the difference between two dates based on the 360 day financial year",
+  "keywords": [
+    "days360",
+    "360 day year",
+    "30US/360",
+    "30E/360"
+  ],
+  "author": "SpaceCraft <developers@gospacecraft.com>",
+  "contributors": [
+    "David Wood <david@gospacecraft.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/spacecraftinc/days360.git"
+  },
+  "bugs": "https://github.com/spacecraftinc/days360/issues",
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "main": "./index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "csv": "^1.1.0",
+    "eslint": "^3.6.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-jsx-a11y": "^2.2.2",
+    "eslint-plugin-react": "^6.3.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.1.0"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "NODE_ENV=test istanbul test _mocha -- --check-leaks --recursive --reporter spec",
+    "lint": "eslint ."
+  }
+}
