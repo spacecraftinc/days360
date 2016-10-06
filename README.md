@@ -1,6 +1,9 @@
 # days360
 
-Calculate the difference between two dates based on the [360 day financial year](https://en.wikipedia.org/wiki/360-day_calendar), using the US/NASD method (30US/360) or European method (30E/360). 
+[![CircleCI](https://circleci.com/gh/spacecraftinc/days360/tree/master.svg?style=shield&circle-token=542bc32ce6082e51fb3541f586b8c713b3e112c4)](https://circleci.com/gh/spacecraftinc/days360/tree/master)
+[![bitHound Overall Score](https://www.bithound.io/github/spacecraftinc/days360/badges/score.svg)](https://www.bithound.io/github/spacecraftinc/days360)
+
+Calculate the difference between two dates based on the [360 day financial year](https://en.wikipedia.org/wiki/360-day_calendar), using the US/NASD method (30US/360) or European method (30E/360).
 
 Excel's implementation of the US/NASD method has an [incorrect implementation](https://wiki.openoffice.org/wiki/Documentation/How_Tos/Calc:_Date_&_Time_functions#Financial_date_systems). This library provides an Excel compatible US/NASD method.
 
