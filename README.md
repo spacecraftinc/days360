@@ -26,6 +26,6 @@ days360(new Date('2016-01-01'), new Date('2016-12-31')); // returns 360
 
 ## Testing
 
-Tests require [Mocha](http://visionmedia.github.com/mocha) and can be run with `npm test`.  You can specify Mocha options, such as the reporter, by adding a [mocha.opts](http://visionmedia.github.com/mocha/#mocha.opts) file to the `test` directory.
+Tests require [Mocha](https://mochajs.org/) and can be run with `npm test`.  You can specify Mocha options, such as the reporter, by adding a [mocha.opts](https://mochajs.org/#mochaopts) file to the `test` directory.
 
 Running `npm test --coverage` will generate code coverage reports with [Istanbul](https://github.com/gotwarlost/istanbul). The code coverage reports will be located in the `coverage` directory, which is excluded from the repository.
