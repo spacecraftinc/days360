@@ -1,0 +1,39 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:8
+    working_directory: ~/project/days360
+    steps:
+      - checkout
+      - run: yarn
+      - persist_to_workspace:
+          root: ~/project
+          paths:
+            - days360
+  test:
+    docker:
+      - image: circleci/node:8
+    parallelism: 1
+    working_directory: ~/project/days360
+    steps:
+      - attach_workspace:
+          at: ~/project
+      - run:
+          command: yarn test:ci $(circleci tests glob "test/**/*.js" | circleci tests split --split-by=timings)
+          environment:
+            MOCHA_FILE: junit/test-results.xml
+          when: always
+      - store_test_results:
+          path: junit
+      - store_artifacts:
+          path: junit
+
+workflows:
+  version: 2
+  ci_workflow:
+    jobs:
+      - build
+      - test:
+          requires:
+            - build

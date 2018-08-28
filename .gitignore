@@ -7,3 +7,9 @@ test/mocha.opts
 
 # Coverage
 coverage/
+
+# CircleCI test results
+test-results.xml
+
+# Logs
+*.log
