@@ -20,7 +20,10 @@
   "engines": {
     "node": ">= 8.0.0"
   },
-  "main": "./index.js",
+  "main": "index.js",
+  "files": [
+    "index.d.ts"
+  ],
   "dependencies": {},
   "devDependencies": {
     "csv": "^1.1.0",
